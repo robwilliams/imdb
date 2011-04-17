@@ -1,0 +1,23 @@
+<%= form_for(@film) do |f| %>
+
+  <%= render 'shared/error_messages', :record => @film %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.select :rating, (1..5), :include_blank => true %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
