@@ -1,5 +1,7 @@
 Imdb::Application.routes.draw do
   
+  devise_for :customers
+
   resources :genres
   resources :films
 

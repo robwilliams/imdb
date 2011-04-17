@@ -1,5 +1,8 @@
 #require 'ruby-debug';debugger
 class FilmsController < ApplicationController
+
+  before_filter :authenticate_customer!, :except => [:index, :show]
+
   # GET /films
   # GET /films.xml
   def index
