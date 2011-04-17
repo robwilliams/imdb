@@ -17,6 +17,11 @@
     <%= f.select :rating, (1..5), :include_blank => true %>
   </div>
   
+  <div class="field">
+    <%= f.label :genre_id %><br />
+    <%= f.select :genre_id, genres_for_select, :include_blank => true %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

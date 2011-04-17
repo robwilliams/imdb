@@ -1,4 +1,6 @@
 class Film < ActiveRecord::Base
+
+  belongs_to :genre
   
   validates :rating, :numericality => {:greater_than => 0, :less_than => 6}
   validates :title, :presence => true
