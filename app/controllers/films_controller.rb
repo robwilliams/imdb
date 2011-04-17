@@ -1,3 +1,4 @@
+#require 'ruby-debug';debugger
 class FilmsController < ApplicationController
   # GET /films
   # GET /films.xml
